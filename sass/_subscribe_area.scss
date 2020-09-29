@@ -19,7 +19,7 @@
             margin: 15px 0 30px;
         }
         @media #{$medium_device}{
-        
+
         }
     }
     .input-group{
@@ -44,9 +44,9 @@
             border-radius: 5px;
             margin-left: 10px;
         }
-        
+
     }
-    
+
     @media #{$small_mobile}{
         .input-group>.custom-file, .input-group>.custom-select, .input-group>.form-control, .input-group>.form-control-plaintext {
             position: relative;
@@ -66,13 +66,13 @@
         }
     }
     @media #{$large_mobile}{
-    
+
     }
-    
+
     @media #{$tab_device}{
 
     }
     @media #{$medium_device}{
-    
+
     }
 }

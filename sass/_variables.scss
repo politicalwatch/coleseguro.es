@@ -1,30 +1,30 @@
-$font_stack_1: 'Poppins', sans-serif;
-$font_stack_2: 'Poppins', sans-serif;
-$body-font: 'Poppins',
+$font_stack_1: 'Quicksand', sans-serif;
+$font_stack_2: 'Quicksand', sans-serif;
+$body-font: 'Quicksand',
 sans-serif;
-$title-font: 'Poppins',
+$title-font: 'Quicksand',
 sans-serif;
 /*Color Variables*/
 
-$primary-color  : #71cd14;
-$title-color    : #2a2a2a;
+$primary-color  : #e5583c;
+$title-color    : #786595;
 $text-color     : #797979;
 $offwhite       : #f6f6f6;
 $white: #fff;
 
 $white_color: #fff;
 $black_color: #000;
-$menu_color: #000;
+$menu_color: $title-color;
 $icon_color: #0c2e60;
 $icon_bg: #f0f4f6;
 $author_text_color: #556172;
-$section_bg: #ecfdff;
+$section_bg: $white;
 $color_1: #f8fbff;
 $color_2: #fffbf9;
 $color_3: #fafafa;
 $color_4: #fffcf4;
-$btn_bg: #ff3368;
-$primary_color: #ff3368;
+$btn_bg: $primary-color;
+$primary_color: $primary-color;
 $btn_hover: #f5790b;
 $section_bg_1: #454545;
 $heading_color: #1a1a1a;

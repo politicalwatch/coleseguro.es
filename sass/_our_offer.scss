@@ -1,8 +1,11 @@
 /************* our offer *****************/
 .our_offer {
-    background-color: $section_bg;
 
-    .date_countdown {
+  background-image: url('../img/fondo.png');
+  background-position: bottom;
+  background-color: #f4f4f4;
+
+  .date_countdown {
         margin: 37px 0 55px;
         #timer {
             display: flex;
@@ -19,7 +22,7 @@
             margin-top: 30px;
         }
         @media #{$medium_device}{
-        
+
         }
     }
     .date{
@@ -32,7 +35,7 @@
             padding-right: 4%;
         }
         @media #{$medium_device}{
-        
+
         }
         &:last-child{
             border-right: 0px solid transparent;
@@ -68,7 +71,7 @@
                 padding: 0px 15px;
             }
             @media #{$medium_device}{
-            
+
             }
         }
     }

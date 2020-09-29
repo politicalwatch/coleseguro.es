@@ -1,11 +1,20 @@
 /**************** common css start ****************/
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700');
 
 body {
     font-family: $font_stack_1;
     padding: 0;
     margin: 0;
     font-size: 14px;
+}
+
+::-moz-selection { background: #FED8A0; }
+::selection { background: #FED8A0; }
+
+.cui-embed {
+  height: 400px;
+  width: 100%;
+  box-shadow: 8px 10px #e1e1e1;
 }
 
 .message_submit_form:focus {
@@ -22,22 +31,22 @@ input:focus {
 }
 
 .section_padding {
-    padding: 140px 0px;
+    padding: 120px 0px;
 
     @media #{$medium_device} {
-        padding: 100px 0px;
+        padding: 60px 0px;
     }
 
     @media #{$tab_device} {
-        padding: 70px 0px;
+        padding: 60px 0px;
     }
 
     @media #{$small_mobile} {
-        padding: 70px 0px;
+        padding: 60px 0px;
     }
 
     @media #{$large_mobile} {
-        padding: 70px 0px;
+        padding: 60px 0px;
     }
 }
 
@@ -97,7 +106,7 @@ h3,
 h4,
 h5,
 h6 {
-    color: $black_color;
+    color: $title_color;
     font-family: $font_stack_2;
     @include transform_time(.5s);
 }
@@ -108,13 +117,12 @@ p {
     font-size: 15px;
     margin-bottom: 0px;
     color: $black_color;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 h2 {
     font-size: 44px;
     line-height: 28px;
-    color: $heading_color;
     font-weight: 600;
     line-height: 1.222;
 

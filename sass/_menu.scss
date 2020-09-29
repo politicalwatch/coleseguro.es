@@ -1,14 +1,16 @@
 /**************menu part start*****************/
 .main_menu {
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        background-color: $white;
 	z-index: 999;
 
 	.navbar-brand {
-		padding-top: 0rem;
-		padding-bottom: 0px;
+
+                img {
+                  width: 8rem;
+                }
 	}
 
 	.navbar {
@@ -24,11 +26,7 @@
 				font-family: $font_stack_1;
 				text-transform: capitalize;
 				line-height: 12px;
-				font-weight: 400;
-
-				&:hover {
-					color: $black_color;
-				}
+				font-weight: 700;
 
 				@media #{$medium_device} {
 					padding: 35px 20px;
