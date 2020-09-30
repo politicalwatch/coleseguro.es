@@ -1289,10 +1289,9 @@ ul {
     color: #f5790b !important; }
   .main_menu a i {
     color: #000;
-    position: relative;
     z-index: 1;
     font-size: 15px;
-    margin-left: 30px; }
+    color: #786595; }
   .main_menu .cart .dropdown-toggle::after {
     display: inline-block;
     margin-left: .255em;
