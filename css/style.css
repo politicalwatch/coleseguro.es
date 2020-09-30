@@ -1831,7 +1831,7 @@ ul {
   .subscribe_area .input-group input {
     height: 60px;
     padding-left: 25px;
-    border: 0px solid transparent;
+    border: 1px solid #ccc;
     background-color: #fff; }
     .subscribe_area .input-group input::placeholder {
       text-transform: capitalize; }
