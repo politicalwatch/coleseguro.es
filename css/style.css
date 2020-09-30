@@ -1225,9 +1225,8 @@ ul {
 /**************menu part start*****************/
 .main_menu {
   width: 100%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   background-color: #fff;
+  position: fixed;
   z-index: 999; }
   .main_menu .navbar-brand img {
     width: 8rem; }

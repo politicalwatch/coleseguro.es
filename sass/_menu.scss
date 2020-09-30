@@ -1,9 +1,8 @@
 /**************menu part start*****************/
 .main_menu {
 	width: 100%;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
         background-color: $white;
+        position: fixed;
 	z-index: 999;
 
 	.navbar-brand {
