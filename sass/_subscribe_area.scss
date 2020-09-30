@@ -23,7 +23,7 @@
         }
     }
     .input-group{
-        input{
+        input[type="email"]{
             height: 60px;
             padding-left: 25px;
             border: 1px solid #ccc;
@@ -31,6 +31,9 @@
             &::placeholder{
                 text-transform: capitalize;
             }
+        }
+        input[type="checkbox"]{
+          margin-right: 5px;
         }
         .input-group-text{
             height: 60px;

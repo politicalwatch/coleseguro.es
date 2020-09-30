@@ -1828,13 +1828,15 @@ ul {
         font-size: 30px;
         line-height: 35px;
         margin: 15px 0 30px; } }
-  .subscribe_area .input-group input {
+  .subscribe_area .input-group input[type="email"] {
     height: 60px;
     padding-left: 25px;
     border: 1px solid #ccc;
     background-color: #fff; }
-    .subscribe_area .input-group input::placeholder {
+    .subscribe_area .input-group input[type="email"]::placeholder {
       text-transform: capitalize; }
+  .subscribe_area .input-group input[type="checkbox"] {
+    margin-right: 5px; }
   .subscribe_area .input-group .input-group-text {
     height: 60px;
     width: auto;
