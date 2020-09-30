@@ -67,6 +67,9 @@
             font-size: 14px;
             font-weight: 500;
             text-transform: uppercase;
+            &:hover{
+              background-color: darken($primary_color, 10%);
+            }
             @media #{$tab}{
                 padding: 0px 15px;
             }

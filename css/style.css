@@ -323,7 +323,6 @@ ul {
 
 .btn_2 {
   display: inline-block;
-  width: 180px;
   height: 60px;
   line-height: 60px;
   text-align: center;
@@ -333,16 +332,12 @@ ul {
   font-family: "Quicksand", sans-serif;
   font-weight: 500;
   color: #fff;
-  -o-transition: all .4s ease-in-out;
-  -webkit-transition: all .4s ease-in-out;
   transition: all .4s ease-in-out;
   text-transform: capitalize;
-  background-size: 200% auto;
   text-transform: uppercase;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18); }
   .btn_2:hover {
-    color: #fff !important;
-    background-position: right center; }
+    background-color: #d23a1c; }
   @media (max-width: 991px) {
     .btn_2 {
       height: 50px;
@@ -1765,6 +1760,8 @@ ul {
     font-size: 14px;
     font-weight: 500;
     text-transform: uppercase; }
+    .our_offer .input-group .input-group-text:hover {
+      background-color: #d23a1c; }
     @media (max-width: 991px) {
       .our_offer .input-group .input-group-text {
         padding: 0px 15px; } }
@@ -1851,6 +1848,8 @@ ul {
     text-transform: uppercase;
     border-radius: 5px;
     margin-left: 10px; }
+    .subscribe_area .input-group .input-group-text:hover {
+      background-color: #d23a1c; }
   @media (max-width: 576px) {
     .subscribe_area .input-group > .custom-file, .subscribe_area .input-group > .custom-select, .subscribe_area .input-group > .form-control, .subscribe_area .input-group > .form-control-plaintext {
       position: relative;
