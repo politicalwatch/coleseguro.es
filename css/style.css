@@ -243,9 +243,11 @@ ul {
 @media only screen and (min-width: 1200px) and (max-width: 3640px) {
   .container {
     max-width: 1170px; } }
+
 @media (max-width: 1200px) {
   [class*="hero-ani-"] {
     display: none !important; } }
+
 .form-control:focus {
   color: #495057;
   background-color: #fff;
@@ -262,8 +264,18 @@ ul {
   .pageination .page-link:hover {
     background-color: transparent;
     color: #000; }
+
 .pageination i {
   font-size: 12px; }
+
+#gotoform {
+  min-width: 200px; }
+
+#gotoform.disabled {
+  background-color: grey; }
+
+.our_offer .select2-container, .our_offer select {
+  margin-bottom: 20px; }
 
 /**************** common css end ****************/
 /* Main Button Area css
@@ -535,6 +547,7 @@ ul {
   margin-bottom: 15px; }
   .l_blog_item .l_blog_text .date a {
     font-size: 12px; }
+
 .l_blog_item .l_blog_text h4 {
   font-size: 18px;
   border-bottom: 1px solid #eeeeee;
@@ -542,6 +555,7 @@ ul {
   padding-bottom: 20px;
   -webkit-transition: 0.5s;
   transition: 0.5s; }
+
 .l_blog_item .l_blog_text p {
   margin-bottom: 0px;
   padding-top: 20px; }
@@ -739,6 +753,7 @@ ul {
     padding-right: 10px; }
   .blog-info-link li:last-child::after {
     display: none; }
+
 .blog-info-link::after {
   content: "";
   display: block;
@@ -786,10 +801,12 @@ ul {
     display: block;
     padding-top: 15px;
     border-bottom: 1px solid #f0e9ff; }
+
 .blog_right_sidebar .single_sidebar_widget {
   background: #fbf9ff;
   padding: 30px;
   margin-bottom: 30px; }
+
 .blog_right_sidebar .search_widget .form-control {
   height: 50px;
   border-color: #f0e9ff;
@@ -804,6 +821,7 @@ ul {
     border-color: #f0e9ff;
     outline: 0;
     box-shadow: none; }
+
 .blog_right_sidebar .search_widget .input-group button {
   background: #fff;
   border-left: 0;
@@ -814,6 +832,7 @@ ul {
   .blog_right_sidebar .search_widget .input-group button span {
     font-size: 14px;
     color: #999999; }
+
 .blog_right_sidebar .newsletter_widget .form-control {
   height: 50px;
   border-color: #f0e9ff;
@@ -827,6 +846,7 @@ ul {
     border-color: #f0e9ff;
     outline: 0;
     box-shadow: none; }
+
 .blog_right_sidebar .newsletter_widget .input-group button {
   background: #fff;
   border-left: 0;
@@ -837,6 +857,7 @@ ul {
   .blog_right_sidebar .newsletter_widget .input-group button span {
     font-size: 14px;
     color: #999999; }
+
 .blog_right_sidebar .post_category_widget .cat-list li {
   border-bottom: 1px solid #f0e9ff;
   transition: all 0.3s ease 0s;
@@ -851,6 +872,7 @@ ul {
       margin-bottom: 0px; }
   .blog_right_sidebar .post_category_widget .cat-list li + li {
     padding-top: 15px; }
+
 .blog_right_sidebar .popular_post_widget .post_item .media-body {
   justify-content: center;
   align-self: center;
@@ -866,8 +888,10 @@ ul {
     font-size: 14px;
     line-height: 21px;
     margin-bottom: 0px; }
+
 .blog_right_sidebar .popular_post_widget .post_item + .post_item {
   margin-top: 20px; }
+
 .blog_right_sidebar .tag_cloud_widget ul li {
   display: inline-block; }
   .blog_right_sidebar .tag_cloud_widget ul li a {
@@ -887,6 +911,7 @@ ul {
       text-decoration: none;
       -webkit-transition: 0.5s;
       transition: 0.5s; }
+
 .blog_right_sidebar .instagram_feeds .instagram_row {
   display: flex;
   margin-right: -6px;
@@ -897,6 +922,7 @@ ul {
     padding-right: 6px;
     padding-left: 6px;
     margin-bottom: 15px; }
+
 .blog_right_sidebar .br {
   width: 100%;
   height: 1px;
@@ -936,6 +962,7 @@ ul {
 .single-post-area .blog_details {
   box-shadow: none;
   padding: 0; }
+
 .single-post-area .social-links {
   padding-top: 10px; }
   .single-post-area .social-links li {
@@ -946,11 +973,13 @@ ul {
       padding: 7px;
       font-size: 14px;
       transition: all 0.2s linear; }
+
 .single-post-area .blog_details {
   padding-top: 26px; }
   .single-post-area .blog_details p {
     margin-bottom: 20px;
     font-size: 15px; }
+
 .single-post-area .quote-wrapper {
   background: rgba(130, 139, 178, 0.1);
   padding: 15px;
@@ -962,6 +991,7 @@ ul {
   @media (min-width: 768px) {
     .single-post-area .quote-wrapper {
       padding: 30px; } }
+
 .single-post-area .quotes {
   background: #fff;
   padding: 15px 15px 15px 20px;
@@ -969,13 +999,16 @@ ul {
   @media (min-width: 768px) {
     .single-post-area .quotes {
       padding: 25px 25px 25px 30px; } }
+
 .single-post-area .arrow {
   position: absolute; }
   .single-post-area .arrow .lnr {
     font-size: 20px;
     font-weight: 600; }
+
 .single-post-area .thumb .overlay-bg {
   background: rgba(0, 0, 0, 0.8); }
+
 .single-post-area .navigation-top {
   padding-top: 15px;
   border-top: 1px solid #f0e9ff; }
@@ -1002,6 +1035,7 @@ ul {
     .single-post-area .navigation-top .social-icons li span {
       font-size: 14px;
       color: #999999; }
+
 .single-post-area .blog-author {
   padding: 40px 30px;
   background: #fbf9ff;
@@ -1028,6 +1062,7 @@ ul {
     font-size: 15px; }
   .single-post-area .blog-author h4 {
     font-size: 16px; }
+
 .single-post-area .navigation-area {
   border-bottom: 1px solid #eee;
   padding-bottom: 30px;
@@ -1074,6 +1109,7 @@ ul {
       opacity: 1; }
     .single-post-area .navigation-area .nav-right:hover .thumb img {
       opacity: .5; }
+
 @media (max-width: 991px) {
   .single-post-area .sidebar-widgets {
     padding-bottom: 0px; } }
@@ -1193,6 +1229,7 @@ ul {
 .single_blog_post .desc a {
   font-size: 16px;
   color: #232b2b !important; }
+
 .single_blog_post .single_blog .single_appartment_content {
   padding: 38px 38px 23px;
   border: 0px solid #edeff2;
@@ -1341,16 +1378,15 @@ ul {
     color: #fff !important;
     background-color: #e5583c;
     text-transform: capitalize; }
+
 .dropdown:hover .dropdown-menu {
   transform: scale(1); }
 
 @media (max-width: 991px) {
   .main_menu {
     padding: 26px 0px; }
-
   .home_menu .main-menu-item {
     padding-left: 0px; }
-
   .main_menu .main-menu-item {
     text-align: left !important; }
     .main_menu .main-menu-item .nav-item {
@@ -1358,7 +1394,6 @@ ul {
       .main_menu .main-menu-item .nav-item .nav-link {
         padding: 5px 15px !important;
         color: #000; }
-
   .navbar-collapse {
     z-index: 9999 !important;
     position: absolute;
@@ -1367,7 +1402,6 @@ ul {
     width: 100%;
     background-color: #fff;
     text-align: center !important; }
-
   .dropdown .dropdown-menu {
     transform: scale(1, 0);
     display: none;
@@ -1378,7 +1412,6 @@ ul {
     color: #e5583c; }
   .dropdown .dropdown-item:hover {
     color: #e5583c !important; }
-
   .navbar-brand img {
     max-width: 100px;
     margin: 0 auto;
@@ -1387,23 +1420,23 @@ ul {
     right: 0;
     display: inline-block;
     top: 0; }
-
   .navbar-light .navbar-toggler {
     border-color: transparent;
     position: absolute;
     left: 0; }
-
   .menu_icon i {
     color: #000; }
-
   .main_menu a i {
     margin-left: 13px; } }
+
 @media (max-width: 576px) {
   .main_menu {
     padding: 20px 0px; } }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .main_menu {
     padding: 20px 0px; } }
+
 .dropdown-menu {
   border: 0px solid rgba(0, 0, 0, 0.15) !important;
   background-color: #fafafa; }
@@ -1413,6 +1446,7 @@ ul {
 
 .home_menu .menu_btn:hover a {
   color: #fff !important; }
+
 .home_menu .main-menu-item {
   justify-content: center !important; }
 
@@ -1630,6 +1664,7 @@ ul {
     font-size: 20px;
     font-weight: 700;
     margin-left: 60px; }
+
 .product_list .owl-nav {
   position: absolute;
   right: 0;
@@ -1896,6 +1931,7 @@ ul {
   color: #e5583c;
   text-transform: uppercase;
   letter-spacing: 2px; }
+
 .product_list h2 {
   font-weight: 700;
   font-size: 48px;
@@ -2066,6 +2102,7 @@ ul {
   border-bottom: 1px solid #eeeeee; }
   .p_filter_widgets .widgets_inner:last-child {
     border-bottom: 0px; }
+
 .p_filter_widgets .list {
   border-top: 1px solid #ddd;
   padding-top: 25px;
@@ -2284,6 +2321,7 @@ ul {
 @media (max-width: 576px) {
   .s_product_text {
     margin-top: 30px; } }
+
 .s_product_text h5 {
   font-weight: 700;
   font-size: 15px;
@@ -2294,16 +2332,19 @@ ul {
       margin-bottom: 15px; } }
   .s_product_text h5 span {
     margin: 0 10px; }
+
 .s_product_text h3 {
   font-size: 24px;
   font-weight: 700;
   color: #786595;
   margin-bottom: 10px; }
+
 .s_product_text h2 {
   font-size: 24px;
   font-weight: bold;
   color: #e5583c;
   margin-bottom: 15px; }
+
 .s_product_text .list li {
   margin-bottom: 5px; }
   .s_product_text .list li a {
@@ -2322,15 +2363,18 @@ ul {
         color: #555; }
   .s_product_text .list li:last-child {
     margin-bottom: 0px; }
+
 .s_product_text p {
   padding-top: 20px;
   border-top: 1px dotted #d5d5d5;
   margin: 20px 0; }
+
 .s_product_text .card_area .main_btn {
   line-height: 38px;
   padding: 0px 38px;
   text-transform: uppercase;
   margin-right: 10px; }
+
 .s_product_text .card_area .icon_btn {
   margin-right: 10px;
   background: #f6f6f6;
@@ -2377,9 +2421,11 @@ ul {
     padding: 7px;
     border-left: 1px solid #dddddd;
     display: inline-block; }
+
 @media (max-width: 576px) {
   .cart_area .media {
     display: block; } }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .cart_area .media {
     display: block; } }
@@ -2527,10 +2573,12 @@ ul {
   color: #786595;
   margin-bottom: 20px;
   font-weight: 700; }
+
 .review_box p {
   margin-bottom: 0px;
   display: inline-block;
   font-weight: 500; }
+
 .review_box .list {
   display: inline-block;
   padding-left: 10px;
@@ -2540,13 +2588,17 @@ ul {
     .review_box .list li a {
       display: inline-block;
       color: #fbd600; }
+
 .review_box .form-control {
   height: 50px;
   border-radius: 0; }
+
 .review_box ::placeholder {
   font-size: 14px; }
+
 .review_box .btn_3 {
   padding: 13px 39px; }
+
 .review_box .contact_form {
   margin-top: 15px; }
 
@@ -2763,9 +2815,11 @@ ul {
 ============================================================================================ */
 .checkout_area p {
   font-size: 14px; }
+
 .checkout_area .form-control {
   font-size: 14px;
   height: 40px; }
+
 .checkout_area .form-control {
   border: 1px solid #eee; }
   .checkout_area .form-control :focus {
@@ -2800,6 +2854,7 @@ ul {
   @media (max-width: 991px) {
     .returning_customer p {
       padding-left: 0; } }
+
 .returning_customer .contact_form {
   max-width: 710px;
   margin-left: 15px; }
@@ -2921,6 +2976,7 @@ ul {
   color: #786595;
   padding-bottom: 10px;
   margin-bottom: 30px; }
+
 .billing_details .contact_form .form-group {
   margin-bottom: 20px; }
   .billing_details .contact_form .form-group input {
@@ -3059,6 +3115,7 @@ ul {
   max-width: 870px;
   color: #786595;
   margin-bottom: 25px; }
+
 .tracking_box_area .tracking_box_inner .tracking_form {
   max-width: 645px; }
   .tracking_box_area .tracking_box_inner .tracking_form .form-group {
@@ -3183,6 +3240,7 @@ ul {
   .login_part .login_part_text .login_part_text_iner, .login_part .login_part_text .login_part_form_iner, .login_part .login_part_form .login_part_text_iner, .login_part .login_part_form .login_part_form_iner {
     display: table-cell;
     vertical-align: middle; }
+
 .login_part .login_part_text {
   background-image: -moz-linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
   background-image: -webkit-linear-gradient(16deg, #ff005a 0%, #ff5d2d 64%, #ffba00 100%);
@@ -3205,9 +3263,11 @@ ul {
     .login_part .login_part_text .btn_3:hover {
       background-color: #fff;
       color: #e5583c; }
+
 @media (max-width: 991px) {
   .login_part .login_part_form {
     padding: 0; } }
+
 .login_part .login_part_form h3 {
   font-size: 26px;
   line-height: 36px;
@@ -3219,12 +3279,14 @@ ul {
   @media only screen and (min-width: 992px) and (max-width: 1200px) {
     .login_part .login_part_form h3 {
       margin-bottom: 20px; } }
+
 .login_part .login_part_form .form-control {
   border: 0px solid transparent;
   border-bottom: 1px solid #dddddd;
   border-radius: 0; }
   .login_part .login_part_form .form-control ::placeholder {
     color: #c3c3c3; }
+
 .login_part .creat_account {
   margin-top: 11px; }
   .login_part .creat_account label {
@@ -3232,10 +3294,12 @@ ul {
     font-size: 14px;
     margin-bottom: 0;
     margin-left: 10px; }
+
 .login_part .form-group .btn_3 {
   display: block;
   width: 100%;
   margin: 30px 0 17px; }
+
 .login_part .lost_pass {
   color: #777777;
   text-align: right;
@@ -3256,18 +3320,21 @@ ul {
   .s_product_text .card_area .product_count input {
     border: 0px solid transparent;
     text-align: center; }
+
 .s_product_text .product_count {
   border: 1px solid #ddd;
   border-radius: 50px;
   display: flex;
   align-items: center;
   padding: 12px 15px; }
+
 .s_product_text .product_count .input-number {
   display: inline-block;
   width: 60px; }
   @media (max-width: 576px) {
     .s_product_text .product_count .input-number {
       width: 30px; } }
+
 .s_product_text .Wishlist {
   position: absolute;
   left: 0px;
@@ -3275,6 +3342,7 @@ ul {
   width: 1920px;
   height: 3162px;
   z-index: 365; }
+
 .s_product_text .like_us {
   border-radius: 50%;
   background-color: white;
@@ -3284,6 +3352,7 @@ ul {
   line-height: 56px;
   color: #7f7f7f;
   text-align: center; }
+
 .s_product_text .btn_3 {
   padding: 13px 36px;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
@@ -3298,6 +3367,7 @@ ul {
   margin-bottom: 35px; }
   .confirmation_part .confirmation_tittle span {
     color: #e5583c; }
+
 .confirmation_part .single_confirmation_details {
   background-color: #fff;
   padding: 35px 40px; }
@@ -3326,6 +3396,7 @@ ul {
       color: #777777; }
     .confirmation_part .single_confirmation_details ul li span {
       color: #222222; }
+
 .confirmation_part .order_details_iner {
   margin-top: 50px;
   background-color: #fff;
@@ -4205,32 +4276,42 @@ h6 {
 @media (max-width: 576px) {
   .blog_part {
     padding-bottom: 50px; } }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .blog_part {
     padding-bottom: 50px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog_part {
     padding-bottom: 50px; } }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .blog_part {
     padding-bottom: 50px; } }
+
 .blog_part .card {
   border: 0px solid transparent; }
+
 .blog_part .blog_right_sidebar .widget_title {
   font-size: 20px;
   margin-bottom: 40px;
   font-style: inherit !important; }
+
 @media (max-width: 576px) {
   .blog_part .single-home-blog {
     margin-bottom: 20px; } }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .blog_part .single-home-blog {
     margin-bottom: 20px; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog_part .single-home-blog {
     margin-bottom: 20px; } }
+
 .blog_part .single-home-blog .card-img-top {
   border-radius: 0px; }
+
 .blog_part .single-home-blog .card {
   border-radius: 0px;
   background-color: transparent;
@@ -4369,6 +4450,7 @@ h6 {
 
 .form-contact label {
   font-size: 14px; }
+
 .form-contact .form-group {
   margin-bottom: 30px; }
   .form-contact .form-group .button-contactForm {
@@ -4399,6 +4481,7 @@ h6 {
       .form-contact .form-group .btn_1:hover i {
         color: #e5583c;
         color: #fff !important; }
+
 .form-contact .form-control {
   border: 1px solid #f0e9ff;
   border-radius: 5px;
@@ -4412,6 +4495,7 @@ h6 {
   .form-contact .form-control::placeholder {
     font-weight: 300;
     color: #999999; }
+
 .form-contact textarea {
   border-radius: 12px;
   height: 100% !important; }
@@ -4420,18 +4504,22 @@ h6 {
   .contact-section .btn_1 {
     margin-bottom: 0px !important;
     margin-top: 0px !important; } }
+
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .contact-section .btn_1 {
     margin-bottom: 0px !important;
     margin-top: 0px !important; } }
+
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-section .btn_1 {
     margin-bottom: 0px !important;
     margin-top: 0px !important; } }
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .contact-section .btn_1 {
     margin-bottom: 0px !important;
     margin-top: 0px !important; } }
+
 /*=================== contact form end ====================*/
 /* Contact Success and error Area css
 ============================================================================================ */
@@ -4649,5 +4737,3 @@ h6 {
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     .footer_part .justify-content-around {
       justify-content: flex-start !important; } }
-
-/*# sourceMappingURL=style.css.map */

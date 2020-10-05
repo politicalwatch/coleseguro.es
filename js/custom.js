@@ -233,7 +233,7 @@
   //------- makeTimer js --------//
   function makeTimer() {
 
-    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+    // var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
     var endTime = new Date("30 Oct 2020 23:59:59 GMT+01:00");
     endTime = (Date.parse(endTime) / 1000);
 
@@ -357,20 +357,70 @@ inputNumber($('.input-number'));
 
   // Select city and school name
   $(document).ready(function () {
+    const placeSelect = $("#select-city")
+    const schoolSelect = $("#select-centre")
 
-    $("#select-city").select2({
-      placeholder: "Selecciona un municipio",
-      minimumInputLength: 1,
-      data: function() {
-        //
-      }
-    });
+    $.getJSON('data/centros.json', data => {
+      const places = Object.keys(data)
 
-    $('#select-city').change(function() {
-      if ($('#select-city').val() != '') {
-        $('#gotoform').attr('href', 'https://info380012.typeform.com/to/wcxB7Gep#ciudad='+$('#select-city').val())
-      }
-    });
+      placeSelect.append($('<option>', {
+        value: '',
+        text: ''
+      }))
+
+      places.forEach(place => {
+        placeSelect.append($('<option>', {
+          value: place,
+          text: place
+        }))
+      })
+
+      placeSelect.select2({
+        placeholder: "Selecciona un municipio",
+        minimumInputLength: 1,
+        theme: "bootstrap"
+      });
+
+      placeSelect.change(function() {
+        const city = placeSelect.val()
+        if (city == '') {
+          schoolSelect.prop('disabled', true)
+          return
+        }
+        schoolSelect.prop('disabled', false)
+
+        schoolSelect.empty()
+
+        const schools = data[city]
+
+        schoolSelect.append($('<option>', {
+          value: '',
+          text: ''
+        }))
+
+        schools.forEach(school => {
+          schoolSelect.append($('<option>', {
+            value: school,
+            text: school
+          }))
+        })
+
+        schoolSelect.select2({
+          placeholder: "Selecciona un centro educativo",
+          minimumInputLength: 1,
+          theme: "bootstrap"
+        });
+      });
+    })
+
+    schoolSelect.change(function() {
+      const school = schoolSelect.val()
+      const city = placeSelect.val()
+      const link = $('#gotoform')
+
+      link.removeClass('disabled')
+      link.attr('href', 'https://info380012.typeform.com/to/wcxB7Gep#city=' + city + '&centre=' + school)
+    })
   });
 
 
