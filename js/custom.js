@@ -164,10 +164,10 @@
 
 
 
-  // niceSelect js code
-  $(document).ready(function () {
-    $('select').niceSelect();
-  });
+  // NiceSelect js code
+  // $(document).ready(function () {
+    // $('select').niceSelect();
+  // });
 
   // menu fixed js code
   // $(window).scroll(function () {
@@ -224,16 +224,16 @@
     $('#search_input_box').slideUp(500);
   });
 
-  //------- Mailchimp js --------//  
+  //------- Mailchimp js --------//
   function mailChimp() {
     $('#mc_embed_signup').find('form').ajaxChimp();
   }
   mailChimp();
 
-  //------- makeTimer js --------//  
+  //------- makeTimer js --------//
   function makeTimer() {
 
-    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");	
+    //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
     var endTime = new Date("30 Oct 2020 23:59:59 GMT+01:00");
     endTime = (Date.parse(endTime) / 1000);
 
@@ -265,7 +265,7 @@
   }
 // click counter js
 (function() {
- 
+
   window.inputNumber = function(el) {
 
     var min = el.attr('min') || false;
@@ -317,8 +317,8 @@ inputNumber($('.input-number'));
 
   // var a = 0;
   // $('.increase').on('click', function(){
-     
-    
+
+
 
   //   console.log(  $(this).innerHTML='Product Count: '+ a++ );
   // });
@@ -339,7 +339,7 @@ inputNumber($('.input-number'));
           breakpoint:991,
           settings: {
               item:1,
-              
+
             }
       },
       {
@@ -351,9 +351,28 @@ inputNumber($('.input-number'));
             }
       }
   ]
-  });  
+  });
  }
-    
+
+
+  // Select city and school name
+  $(document).ready(function () {
+
+    $("#select-city").select2({
+      placeholder: "Selecciona un municipio",
+      minimumInputLength: 1,
+      data: function() {
+        //
+      }
+    });
+
+    $('#select-city').change(function() {
+      if ($('#select-city').val() != '') {
+        $('#gotoform').attr('href', 'https://info380012.typeform.com/to/wcxB7Gep#ciudad='+$('#select-city').val())
+      }
+    });
+  });
+
 
 
 
