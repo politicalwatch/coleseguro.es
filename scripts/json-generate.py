@@ -13,12 +13,12 @@ with open(sys.argv[1]) as csv_file:
             is_first_row = False
             continue
 
-        key = row[4] + ' (' + row[3] + ')'
+        key = row[2] + ' (' + row[1] + ')'
 
         if key not in schools:
             schools[key] = []
 
-        school_name = row[1] + ' (' + row[5] + ')'
+        school_name = row[4] + ' (' + row[3] + ')'
         schools[key].append(school_name)
 
 json_data = app_json = json.dumps(schools)
