@@ -333,11 +333,15 @@ ul {
 #gotoform {
   min-width: 200px
 }
+#gotoform.disabled {
+  background-color: grey
+}
 
 .our_offer {
     .select2-container, select {
         margin-bottom: 20px
     }
 }
+
 
 /**************** common css end ****************/

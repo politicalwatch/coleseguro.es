@@ -387,6 +387,7 @@ inputNumber($('.input-number'));
           schoolSelect.prop('disabled', true)
           return
         }
+        schoolSelect.prop('disabled', false)
 
         schoolSelect.empty()
 
@@ -414,7 +415,11 @@ inputNumber($('.input-number'));
 
     schoolSelect.change(function() {
       const school = schoolSelect.val()
-      $('#gotoform').attr('href', 'https://info380012.typeform.com/to/wcxB7Gep#centro=' + school)
+      const city = placeSelect.val()
+      const link = $('#gotoform')
+
+      link.removeClass('disabled')
+      link.attr('href', 'https://info380012.typeform.com/to/wcxB7Gep#city=' + city + '&centre=' + school)
     })
   });
 
