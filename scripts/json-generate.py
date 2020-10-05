@@ -1,9 +1,10 @@
+import sys
 import csv
 import json
 
 schools = {}
 
-with open('schools.csv') as csv_file:
+with open(sys.argv[1]) as csv_file:
     csv_reader = csv.reader(csv_file, delimiter=',')
     is_first_row = True
 
