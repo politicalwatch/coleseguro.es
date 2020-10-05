@@ -269,7 +269,7 @@ ul {
   min-width: 200px; }
 
 #gotoform.disabled {
-  background-color: grey; }
+  display: none; }
 
 .our_offer .select2-container, .our_offer select {
   margin-bottom: 20px; }
@@ -346,7 +346,8 @@ ul {
   text-transform: uppercase;
   box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18); }
   .btn_2:hover {
-    background-color: #d23a1c; }
+    background-color: #d23a1c;
+    color: #fff; }
   @media (max-width: 991px) {
     .btn_2 {
       height: 50px;
@@ -1748,8 +1749,7 @@ ul {
   .our_offer span {
     display: block;
     font-size: 13px;
-    color: #666666;
-    text-transform: uppercase; }
+    color: #666666; }
   .our_offer .input-group input {
     height: 60px;
     padding-left: 25px;

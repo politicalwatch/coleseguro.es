@@ -334,7 +334,11 @@ ul {
   min-width: 200px
 }
 #gotoform.disabled {
-  background-color: grey
+  display: none;
+  // box-shadow: none;
+  // background-color: #ddd;
+  // color: #aaa;
+  // cursor: not-allowed;
 }
 
 .our_offer {

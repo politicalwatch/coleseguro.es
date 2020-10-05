@@ -72,6 +72,7 @@
 	box-shadow: -1.717px 8.835px 29.76px 2.24px rgba(255, 51, 104, 0.18);
 	&:hover{
           background-color: darken($btn_bg, 10%);
+          color: $white_color;
 	}
 	@media #{$tab}{
 		height: 50px;
