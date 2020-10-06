@@ -1752,6 +1752,8 @@ ul {
         font-size: 30px;
         line-height: 35px;
         margin-top: 30px; } }
+  .our_offer h4 {
+    padding-bottom: 40px; }
   .our_offer .date {
     font-size: 36px;
     color: #000;
