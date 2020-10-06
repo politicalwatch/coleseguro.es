@@ -30,10 +30,20 @@
     }
 }
 
-.nav-item {
-    .sharethis-inline-share-buttons {
-        margin-top: 24px;
-        position: absolute;
-        right: 0;
+@media (max-width: 991px) {
+    .nav-item {
+        #st-1 {
+            text-align: center;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        .sharethis-inline-share-buttons {
+            margin-top: 24px;
+            position: absolute;
+            right: 0;
+        }
     }
 }
