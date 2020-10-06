@@ -4751,3 +4751,8 @@ h6 {
   .social-links .telegram-link img {
     width: 30px;
     height: 30px; }
+
+.nav-item .sharethis-inline-share-buttons {
+  margin-top: 24px;
+  position: absolute;
+  right: 0; }
