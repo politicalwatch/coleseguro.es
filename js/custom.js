@@ -378,6 +378,7 @@ inputNumber($('.input-number'));
       placeSelect.select2({
         placeholder: "Selecciona un municipio",
         minimumInputLength: 1,
+        language: "es",
         theme: "bootstrap"
       });
 
@@ -385,6 +386,7 @@ inputNumber($('.input-number'));
         placeholder: "Selecciona un centro educativo",
         minimumInputLength: 1,
         theme: "bootstrap",
+        language: "es",
         disabled: true
       });
 
