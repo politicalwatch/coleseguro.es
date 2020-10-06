@@ -369,10 +369,21 @@ inputNumber($('.input-number'));
       }))
 
       places.forEach(place => {
-        placeSelect.append($('<option>', {
+        const placeParts = place.split(' (')
+        const town = placeParts[0]
+        const province = placeParts[1].replace(')', '')
+
+        const option = $('<option>', {
           value: place,
           text: place
-        }))
+        })
+
+        if (town == province) {
+          placeSelect.prepend(option)
+        }
+        else {
+          placeSelect.append(option)
+        }
       })
 
       placeSelect.select2({
