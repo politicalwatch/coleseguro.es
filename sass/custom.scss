@@ -1,0 +1,18 @@
+#gotoform {
+  min-width: 200px
+}
+
+#gotoform.disabled {
+  display: none;
+  // box-shadow: none;
+  // background-color: #ddd;
+  // color: #aaa;
+  // cursor: not-allowed;
+}
+
+.our_offer {
+    .select2-container, select {
+        margin-bottom: 20px
+    }
+}
+

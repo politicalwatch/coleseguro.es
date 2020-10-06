@@ -381,6 +381,13 @@ inputNumber($('.input-number'));
         theme: "bootstrap"
       });
 
+      schoolSelect.select2({
+        placeholder: "Selecciona un centro educativo",
+        minimumInputLength: 1,
+        theme: "bootstrap",
+        disabled: true
+      });
+
       placeSelect.change(function() {
         const city = placeSelect.val()
         if (city == '') {
@@ -405,11 +412,7 @@ inputNumber($('.input-number'));
           }))
         })
 
-        schoolSelect.select2({
-          placeholder: "Selecciona un centro educativo",
-          minimumInputLength: 1,
-          theme: "bootstrap"
-        });
+        schoolSelect.select2('enable')
       });
     })
 
