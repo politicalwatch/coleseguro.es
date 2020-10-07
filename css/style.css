@@ -1717,17 +1717,17 @@ ul {
     .our_offer .date_countdown #timer {
       display: flex;
       justify-content: space-between; }
-  .our_offer h2 {
-    font-size: 50px;
-    line-height: 70px;
-    font-weight: 700; }
-    @media (max-width: 991px) {
-      .our_offer h2 {
-        font-size: 30px;
-        line-height: 35px;
-        margin-top: 30px; } }
-  .our_offer h4 {
+  .our_offer .title-section {
     padding-bottom: 40px; }
+    .our_offer .title-section h2 {
+      font-size: 50px;
+      line-height: 70px;
+      font-weight: 700; }
+      @media (max-width: 991px) {
+        .our_offer .title-section h2 {
+          font-size: 30px;
+          line-height: 35px;
+          margin-top: 30px; } }
   .our_offer .date {
     font-size: 36px;
     color: #000;
@@ -4676,10 +4676,10 @@ h6 {
 @media (max-width: 991px) {
   .nav-item #st-1 {
     text-align: center; } }
-
 @media (min-width: 992px) {
   .nav-item .sharethis-inline-share-buttons {
     margin-top: 24px;
     position: absolute;
     right: 0; } }
+
 /*# sourceMappingURL=style.css.map */
