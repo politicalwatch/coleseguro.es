@@ -49,17 +49,6 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2-bootstrap-theme/0.1.0-beta.10/select2-bootstrap.css">
 
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)
-            },i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-127864699-3', 'auto');
-        ga('send', 'pageview');
-    </script>
-
   </head>
 
   <body>
@@ -90,11 +79,12 @@
                   <li class="nav-item">
                     <a class="nav-link" href="#team">Equipo</a>
                   </li>
+                  <li class="nav-item">
+                    <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f7c3e7909a5a70012a88843&product=undefined' async='async'></script>
+                    <div class="sharethis-inline-share-buttons"></div>
+                  </li>
                 </ul>
               </div>
-
-              <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f7c3e7909a5a70012a88843&product=undefined' async='async'></script>
-              <div class="sharethis-inline-share-buttons"></div>
             </nav>
           </div>
         </div>
@@ -257,6 +247,14 @@
                       <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
                     </div>
                   </form>
+                  <h3 class="social-links-header">Unete a nuestro canal de Telegram</h3>
+                  <div class="social-links">
+                      <a class="telegram-link" href="https://t.me/ColeSeguroEs"><img src="/img/telegram.svg" /></a>
+                  </div>
+                  <h3 class="social-links-header">Comparte la encuesta en tus redes</h3>
+                  <div class="social-links">
+                    <div class="sharethis-inline-share-buttons"></div>
+                  </div>
                 </div>
                 <!--End mc_embed_signup-->
 
@@ -355,6 +353,67 @@
     <!-- custom js -->
     <script src="js/custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/es.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      function launchA() {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)
+        },i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-127864699-3', 'auto');
+        ga('require', 'linkid', 'linkid.js');
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+      }
+      (function(){
+        if(window.localStorage['ga-consent'] == "1") {
+          launchA();
+        } else if(window.localStorage['ga-consent'] == "opt-out") {
+          console.log("You won't find G-Analytics here")
+        } else {
+          // Ask for it
+          let d = document.createElement('div')
+          d.className = "footer-tab"
+          d.innerHTML = "<p>Nos gustaría usar Google Analytics para conocer más del impacto de esta página. " +
+            "Mientras tanto, le hemos dicho a Google que no registre nada a menos que des tu consentimiento. Si estas usando un Ad Blocker en tu navegador, esta configuración no tiene efecto.<p><p id=\"cbtn\"></p>"
+
+          if(navigator.doNotTrack == "1") {
+            d.innerHTML = "<p>Tienes habilitada la opción Do Not Track en tu navegador. Google Analytics no se cargará a menos que des tu permiso.</p>"
+          }
+
+          let acceptBtn = document.createElement('button')
+          acceptBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = '1'; launchA(); document.body.removeChild(d)  })
+          acceptBtn.innerHTML = "Permitir"
+          acceptBtn.className = "btn_2"
+          acceptBtn.style.marginRight = "5px"
+          acceptBtn.style.border = "none"
+          let denyBtn = document.createElement('button')
+          denyBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = 'opt-out'; document.body.removeChild(d)  })
+          denyBtn.innerHTML = "No permitir"
+          denyBtn.className = "btn_2"
+          denyBtn.style.marginLeft = "5px"
+          denyBtn.style.border = "none"
+          let z = document.createElement('div')
+          z.style.textAlign = "center"
+          z.appendChild(acceptBtn)
+          z.appendChild(denyBtn)
+          d.appendChild(z)
+          d.style.height = "140px"
+          d.style.padding = "10px"
+          d.style.display = "block"
+          d.style.position = "fixed"
+          d.style.background = "white"
+          d.style.bottom = "0"
+          d.style.left = 0
+          d.style.right = 0
+          d.style.paddingLeft = "25px"
+          d.style.paddingRight = "25px"
+          document.body.appendChild(d)
+        }
+      })()
+
+    </script>
 
   </body>
 
