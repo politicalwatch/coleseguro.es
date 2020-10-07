@@ -389,13 +389,13 @@
           acceptBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = '1'; launchA(); document.body.removeChild(d)  })
           acceptBtn.innerHTML = "Permitir"
           acceptBtn.className = "btn_2"
-          acceptBtn.style.marginRight = "5px"
+          acceptBtn.style.margin = "5px"
           acceptBtn.style.border = "none"
           let denyBtn = document.createElement('button')
           denyBtn.addEventListener('click', function(e) { e.preventDefault(); window.localStorage['ga-consent'] = 'opt-out'; document.body.removeChild(d)  })
           denyBtn.innerHTML = "No permitir"
           denyBtn.className = "btn_2"
-          denyBtn.style.marginLeft = "5px"
+          denyBtn.style.margin = "5px"
           denyBtn.style.border = "none"
           let z = document.createElement('div')
           z.style.textAlign = "center"
