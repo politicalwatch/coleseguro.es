@@ -2,6 +2,21 @@ import sys
 import csv
 import json
 
+postal_codes = {}
+
+with open('cp.csv') as csv_file:
+    csv_reader = csv.reader(csv_file, delimiter=',')
+    is_first_row = True
+
+    for row in csv_reader:
+        if is_first_row:
+            is_first_row = False
+            continue
+        key = row[2]
+        value = row[1]
+
+        postal_codes[key] = value
+
 schools = {}
 
 with open(sys.argv[1]) as csv_file:
@@ -13,7 +28,14 @@ with open(sys.argv[1]) as csv_file:
             is_first_row = False
             continue
 
-        key = row[4] + ' (' + row[3] + ')'
+        postal_code = row[8]
+        locality = row[4]
+        province = row[3]
+
+        if postal_code in postal_codes and locality != postal_codes[postal_code]:
+            key = locality + ' / ' + postal_codes[postal_code] + ' (' + province + ')'
+        else:
+            key = locality + ' (' + province + ')'
         school_name = row[1] + ' (' + row[5] + ')'
 
         if key not in schools:

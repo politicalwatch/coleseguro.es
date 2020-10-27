@@ -387,7 +387,7 @@ inputNumber($('.input-number'));
       })
 
       placeSelect.select2({
-        placeholder: "Selecciona un municipio",
+        placeholder: "Busca tu localidad o municipio",
         minimumInputLength: 1,
         language: "es",
         theme: "bootstrap"
