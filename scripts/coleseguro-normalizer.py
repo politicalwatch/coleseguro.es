@@ -121,9 +121,9 @@ languages = {
 
 column_increment = {
     'es': 0,
-    'ca': 8,
-    'gl': 16,
-    'eu': 24,
+    'ca': 9,
+    'gl': 17,
+    'eu': 25,
 }
 
 regions = {
@@ -200,6 +200,7 @@ with open(sys.argv[1]) as csv_file:
                     '¿Consideras que la educación digital en tu centro es de calidad? (existencia de equipos adecuados, herramientas adaptadas, metodologías, evaluaciones, etc.)',
                     '¿Sientes que se están tomando medidas para que todos los niños y niñas del centro tengan las mismas oportunidades para seguir con su educación?',
                     '¿Consideras que las medidas que se han tomado pueden impactar negativamente en la salud mental y en el bienestar emocional de los niños y niñas?',
+                    'Si hay alguna cuestión sobre la seguridad en los colegios que nos quieras comentar, cuéntanoslo aquí',
                     'centro',
                     'Localidad',
                     'Provincia',
@@ -214,15 +215,19 @@ with open(sys.argv[1]) as csv_file:
             entry = []
             entry.append(row[0])
             entry.append(row[1])
-            for i in range(2 + increment, 10 + increment):
+            for i in range(2 + increment, 11 + increment):
+                print(i)
                 value = row[i]
                 if value == '':
                     entry.append('')
                     continue
-                translated_value = lang_strings[value]
+                try:
+                    translated_value = lang_strings[value]
+                except:
+                    translated_value = value
                 entry.append(translated_value)
-            entry.append(row[35])
-            location = row[34]
+            entry.append(row[39])
+            location = row[38]
             location_components = location.split(' (')
             municipality = location_components[0]
             province = location_components[1][:-1]
