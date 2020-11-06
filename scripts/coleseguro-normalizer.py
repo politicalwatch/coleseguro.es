@@ -216,7 +216,6 @@ with open(sys.argv[1]) as csv_file:
             entry.append(row[0])
             entry.append(row[1])
             for i in range(2 + increment, 11 + increment):
-                print(i)
                 value = row[i]
                 if value == '':
                     entry.append('')
