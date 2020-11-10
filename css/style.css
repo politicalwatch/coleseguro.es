@@ -4524,7 +4524,8 @@ h6 {
     .footer_part {
       padding: 25px 0px 25px; } }
   .footer_part img {
-    margin-bottom: 35px; }
+    height: 50px;
+    margin-bottom: 15px; }
   @media (max-width: 576px) {
     .footer_part .single_footer_part {
       margin-bottom: 20px; } }
@@ -4638,8 +4639,6 @@ h6 {
       color: #e5583c; }
   .footer_part .info {
     color: red !important; }
-  .footer_part .copyright_part {
-    margin-top: 45px; }
   @media (max-width: 991px) {
     .footer_part .footer_icon {
       text-align: center;
