@@ -435,7 +435,7 @@ inputNumber($('.input-number'));
       const link = $('#gotoform')
 
       link.removeClass('disabled')
-      link.attr('href', 'https://info380012.typeform.com/to/qCQ0pPS6#city=' + city + '&centre=' + school)
+      link.attr('href', 'https://coleseguro.typeform.com/to/qCQ0pPS6#city=' + city + '&centre=' + school)
     })
   });
 
