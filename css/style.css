@@ -4679,5 +4679,39 @@ h6 {
     margin-top: 24px;
     position: absolute;
     right: 0; } }
+table thead tr {
+  background-color: #00AEB9;
+  color: #fff; }
+  table thead tr th {
+    padding: 10px; }
+table tbody tr td {
+  padding: 10px;
+  text-align: center;
+  letter-spacing: 1px; }
+table tbody tr td:nth-child(1) {
+  text-align: left;
+  font-weight: bold; }
+table tbody tr:hover {
+  background-color: #eee; }
+
+.results.section_padding {
+  padding: 60px 0px !important; }
+
+.results h3 {
+  font-weight: bold; }
+.results p {
+  text-align: center; }
+.results b {
+  font-weight: bold;
+  color: #000; }
+.results a {
+  color: #e5583c !important;
+  font-weight: bold; }
+.results .btn_2 {
+  color: #fff !important;
+  font-weight: normal; }
+
+.separated .row {
+  padding: 30px 0px; }
 
 /*# sourceMappingURL=style.css.map */
