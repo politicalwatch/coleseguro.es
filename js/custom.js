@@ -360,7 +360,7 @@ inputNumber($('.input-number'));
     const placeSelect = $("#select-city")
     const schoolSelect = $("#select-centre")
 
-    $.getJSON('data/centros.json', data => {
+    $.getJSON('/data/centros.json', data => {
       const places = Object.keys(data)
 
       placeSelect.append($('<option>', {
