@@ -4679,11 +4679,13 @@ h6 {
     margin-top: 24px;
     position: absolute;
     right: 0; } }
-table thead tr {
+table thead th {
   background-color: #00AEB9;
-  color: #fff; }
-  table thead tr th {
-    padding: 10px; }
+  color: #fff;
+  padding: 10px;
+  position: sticky;
+  top: 80px;
+  z-index: 998; }
 table tbody tr td {
   padding: 10px;
   text-align: center;
@@ -4694,6 +4696,9 @@ table tbody tr td:nth-child(1) {
 table tbody tr:hover {
   background-color: #eee; }
 
+@media (max-width: 991px) {
+  table thead th {
+    top: 55px; } }
 .results.section_padding {
   padding: 60px 0px !important; }
 

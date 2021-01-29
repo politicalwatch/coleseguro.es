@@ -50,12 +50,13 @@
 
 table {
   thead {
-    tr {
+    th {
       background-color: #00AEB9;
       color: $white_color;
-      th {
-        padding: 10px;
-      }
+      padding: 10px;
+      position: sticky;
+      top: 80px;
+      z-index: 998;
     }
   }
   tbody {
@@ -71,6 +72,16 @@ table {
       }
       &:hover {
         background-color: #eee;
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  table {
+    thead {
+      th {
+        top: 55px;
       }
     }
   }
