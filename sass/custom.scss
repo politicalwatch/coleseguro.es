@@ -56,23 +56,33 @@ table {
       padding: 10px;
       position: sticky;
       top: 80px;
+      text-align: right;
       z-index: 998;
+    }
+    table {
+      thead {
+        tr:nth-child(1) {
+          th:nth-child(1) {
+            text-transform: uppercase;
+          }
+        }
+      }
     }
   }
   tbody {
     tr {
       td {
          padding: 10px;
-         text-align: center;
+         text-align: right;
          letter-spacing: 1px;
       }
       td:nth-child(1) {
          text-align: left;
         font-weight: bold;
       }
-      &:hover {
-        background-color: #eee;
-      }
+      // &:hover {
+      //   background-color: #eee;
+      // }
     }
   }
 }
